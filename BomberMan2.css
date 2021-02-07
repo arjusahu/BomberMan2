@@ -1,0 +1,116 @@
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+}
+body{
+    font-size:10em;
+    width:90vw;
+    height:90vh;
+    background-color: #8be3e1;
+}
+#title{
+    text-align: center;
+    text-shadow: .2rem .2rem .2rem white;
+    font-family: bold;
+}
+.container {
+    width: 34rem;
+    align-content: center;
+    position:relative;
+  }
+  
+  .grid {
+    height: 27rem;
+    width: 27rem;
+    display: grid;
+    grid-template-columns: repeat(10,auto);
+    grid-template-rows: repeat(10,auto);
+    background-color: #dcd6bc;
+    margin-left: 3.5rem;
+    margin-top: 1rem;
+    border: 1rem solid #dcd6bc;
+    margin-bottom: .6rem;
+    box-shadow: .01rem .01rem .5rem .1rem black;
+  }
+  
+  div {
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+  }
+  .valid {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: .4rem solid;
+    border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+    box-sizing: border-box;
+  }
+  
+  .checked{
+    height: 2.5rem;
+    width: 2.5rem;
+    border: .3rem solid;
+    background-color: #cecab7;
+    border-color: #9c998d;
+    box-sizing: border-box;
+  }
+  
+  .bomb {
+    height:2.5rem;
+    width: 2.5rem;
+    border: .4rem solid;
+    border-color: #f5f3eb #bab7a9 #bab7a9 #fff9db;
+    box-sizing: border-box;
+  }
+  
+  #flagsLeft{
+      display :inline-block;
+      margin-right: 2rem;
+      margin-bottom: .8rem;
+  }
+  #result {
+      width:35rem;
+      font-size:3.5rem;
+      font-weight:bold;
+    position:absolute;
+    top:10rem;
+    color: #5b305a;
+    text-shadow: .2rem .2rem .5rem black;
+    background-color: rgba(139, 227,227, .6);
+  }
+  
+  #reset{
+      background-color: #ebbf58;
+  }
+  #reset:hover{
+      background-color: #364968;
+      color:white;
+  }
+  @media screen and (max-width:500px)
+  {
+      body{
+          font-size: 5em;
+      }
+      .container{
+          width:25rem
+      }
+      .grid {
+        height: 21rem;
+        width: 21rem;
+        margin-left: 2rem;
+      }
+      .valid,.bomb {
+        height: 1.9rem;
+        width: 1.9rem;
+      }
+      div{
+          font-size: 1rem;
+      }
+      #result {
+        width:25rem;
+        font-size:3.5rem;
+        font-weight:bold;
+        top:6rem;
+      }
+  }
