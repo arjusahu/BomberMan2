@@ -86,7 +86,7 @@ function leftButton(event) {
         ele.innerHTML = ""; //in case it containes flag
         if (ele.style.backgroundColor!="green")
         {
-        points += Number(ele.getAttribute("data"));
+        points += 1;
         point.innerHTML = `${points}`
         }
         ele.style.backgroundColor = "green";
